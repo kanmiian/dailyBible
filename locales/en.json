@@ -1,0 +1,106 @@
+{
+  "home": {
+    "title": "Bible Daily",
+    "description": "Your daily companion to explore the timeless wisdom of the Bible",
+    "subtitle": "Explore the timeless wisdom of the Bible through daily stories and reflections",
+    "read_story": "Read Today's Story",
+    "consult_book": "Consult the Bible",
+    "section_title": "Why Choose Bible Daily",
+    "feature1": {
+      "title": "Daily Bible Stories",
+      "desc": "Fresh biblical narratives and modern interpretations every day"
+    },
+    "feature2": {
+      "title": "Bilingual Content",
+      "desc": "All stories available in both Chinese and English"
+    },
+    "feature3": {
+      "title": "Spiritual Growth",
+      "desc": "Deepen your faith through guided reflection and learning"
+    }
+  },
+  "footer": {
+    "about": "About Us",
+    "description": "Bible Daily is dedicated to sharing biblical wisdom through engaging stories and thoughtful interpretations in both Chinese and English.",
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "faq": "FAQ",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us",
+    "contactInfo": "Questions? Email us at support@bibledaily.com",
+    "rights": "All rights reserved"
+  },
+  "about": {
+    "title": "About Bible Daily",
+    "mission": {
+      "title": "Our Mission",
+      "content": "Bible Daily is dedicated to making the timeless wisdom of the Bible accessible to everyone through engaging stories and thoughtful interpretations. We believe that the Bible's teachings can provide guidance, comfort, and inspiration in our daily lives."
+    },
+    "story": {
+      "title": "Our Story",
+      "content": "Founded with a passion for sharing biblical wisdom, Bible Daily has grown into a trusted resource for Bible stories and spiritual guidance. Our team of dedicated writers and editors work tirelessly to present biblical narratives in both English and Chinese, making these profound stories accessible to a wider audience."
+    },
+    "offer": {
+      "title": "What We Offer",
+      "items": [
+        "Daily Bible stories with modern interpretations",
+        "Bilingual content (English and Chinese)",
+        "In-depth Bible study resources",
+        "Spiritual growth guidance",
+        "Community discussions and reflections"
+      ]
+    },
+    "approach": {
+      "title": "Our Approach",
+      "content": "We believe in presenting Bible stories in a way that is both faithful to the original text and relevant to modern life. Our content is carefully crafted to:",
+      "items": [
+        "Maintain historical and theological accuracy",
+        "Provide clear and engaging storytelling",
+        "Offer practical applications for daily life",
+        "Respect diverse interpretations and perspectives"
+      ]
+    },
+    "team": {
+      "title": "Our Team",
+      "content": "Our team consists of biblical scholars, experienced writers, and passionate educators who are committed to sharing the wisdom of the Bible. We work together to ensure that our content is both accurate and accessible."
+    },
+    "community": {
+      "title": "Join Our Community",
+      "content": "We invite you to join our growing community of readers and learners. Whether you're new to the Bible or a long-time student, Bible Daily offers resources to support your spiritual journey."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "We welcome your feedback, questions, and suggestions. Please don't hesitate to reach out to us."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "general": {
+      "title": "General Questions",
+      "what": {
+        "q": "What is Bible Daily?",
+        "a": "Bible Daily is a platform dedicated to sharing Bible stories and promoting spiritual growth through daily readings, interpretations, and resources in both English and Chinese."
+      },
+      "free": {
+        "q": "Is the content free to access?",
+        "a": "Yes, all our basic content is free to access. We offer premium features for those who want to dive deeper into their Bible study journey."
+      }
+    },
+    "content": {
+      "title": "Content Related",
+      "frequency": {
+        "q": "How often is new content added?",
+        "a": "We update our content daily with new Bible stories, reflections, and study materials. Our team works continuously to provide fresh and engaging content."
+      },
+      "bilingual": {
+        "q": "Are the Bible stories available in both English and Chinese?",
+        "a": "Yes, we provide all our Bible stories and content in both English and Chinese to serve a wider audience and promote cross-cultural understanding."
+      },
+      "accuracy": {
+        "q": "How accurate are the Bible translations?",
+        "a": "We use well-established Bible translations and work with biblical scholars to ensure accuracy in our content. We also provide context and explanations to help readers better understand the stories."
+      }
+    }
+  }
+} 

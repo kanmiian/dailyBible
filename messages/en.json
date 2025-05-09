@@ -1,0 +1,192 @@
+{
+  "home": {
+    "title": "Biblical Wisdom Guide",
+    "subtitle": "Find Peace and Strength in Biblical Wisdom",
+    "getStarted": "Get Started",
+    "aboutWebsite": {
+      "title": "About Our Website",
+      "description": "Welcome to Biblical Wisdom Guide, your daily companion for spiritual growth and biblical insights. Our platform is designed to make biblical wisdom accessible and meaningful for everyone.",
+      "features": {
+        "title": "Key Features",
+        "multilingual": "Multilingual support for global accessibility",
+        "dailyVerses": "Daily Bible verses with thoughtful reflections",
+        "bookOfAnswers": "Interactive Book of Answers for spiritual guidance",
+        "userFriendly": "User-friendly interface for easy navigation"
+      }
+    },
+    "bibleIntro": {
+      "title": "Understanding the Bible",
+      "description": "The Bible is more than just a book - it's a timeless source of wisdom, guidance, and spiritual nourishment. Through its stories, teachings, and prophecies, it continues to inspire and transform lives across generations.",
+      "keyPoints": {
+        "title": "Key Aspects",
+        "divineInspiration": "Divinely inspired teachings and revelations",
+        "historicalSignificance": "Rich historical and cultural heritage",
+        "spiritualGuidance": "Timeless spiritual guidance and wisdom",
+        "culturalImpact": "Profound influence on art, literature, and society"
+      }
+    },
+    "dailyBibleStory": {
+      "title": "Daily Bible Stories",
+      "description": "Experience the timeless wisdom of biblical stories through our daily interactive readings. Each story is carefully selected to provide spiritual nourishment and practical lessons for modern life.",
+      "readNow": "Read Now",
+      "features": {
+        "title": "Key Features",
+        "dailyStories": "Fresh biblical stories every day",
+        "interactive": "Interactive reading experience",
+        "reflection": "Deep reflection questions",
+        "growth": "Support for spiritual growth"
+      }
+    },
+    "bookOfAnswers": {
+      "title": "The Book of Answers",
+      "description": "Discover divine guidance through our unique Book of Answers feature. This interactive tool helps you find biblical wisdom and insights for your life's questions and challenges.",
+      "tryNow": "Try Now",
+      "features": {
+        "title": "Key Benefits",
+        "divineGuidance": "Receive divine guidance for your questions",
+        "personalReflection": "Deep personal reflection and understanding",
+        "spiritualGrowth": "Support for spiritual growth and development",
+        "dailyWisdom": "Daily wisdom for life's challenges"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our Biblical Wisdom Guide platform",
+    "general": {
+      "title": "General Questions",
+      "q1": "What is Biblical Wisdom Guide?",
+      "a1": "Biblical Wisdom Guide is a comprehensive platform dedicated to making biblical wisdom accessible to everyone. We offer daily Bible verses, interactive Bible stories, and the unique Book of Answers feature. Our platform combines traditional biblical teachings with modern technology to help users deepen their understanding of the Bible and apply its wisdom to their daily lives.",
+      "q2": "How can I benefit from using this platform?",
+      "a2": "Our platform offers multiple ways to engage with biblical wisdom. You can start your day with a meaningful Bible verse, explore interactive Bible stories that bring ancient wisdom to life, and use the Book of Answers for personal guidance. Whether you're new to the Bible or a long-time student, our resources are designed to support your spiritual journey and help you find practical wisdom for modern life."
+    },
+    "bookOfAnswers": {
+      "title": "Book of Answers",
+      "q1": "What is the Book of Answers?",
+      "a1": "The Book of Answers is a unique feature that combines biblical wisdom with interactive guidance. When you have a question or face a challenge, the Book of Answers provides relevant biblical verses and insights to help you find direction. This feature draws from the rich tradition of biblical wisdom literature, offering practical guidance rooted in timeless spiritual principles.",
+      "q2": "How does the Book of Answers work?",
+      "a2": "The Book of Answers uses a carefully curated collection of biblical verses and wisdom teachings to provide guidance. When you ask a question, the system selects relevant passages that address your specific situation. These selections are based on traditional biblical interpretation methods and are designed to offer meaningful insights while respecting the sacred nature of biblical wisdom.",
+      "q3": "Can I trust the guidance from the Book of Answers?",
+      "a3": "The Book of Answers is designed to provide guidance based on biblical wisdom and principles. While it offers valuable insights, it's important to remember that it's a tool for reflection and guidance, not a replacement for personal prayer or spiritual counsel. We encourage users to use it as part of their broader spiritual practice and personal discernment."
+    },
+    "dailyVerses": {
+      "title": "Daily Bible Verses",
+      "q1": "How are the daily verses selected?",
+      "a1": "Our daily verses are carefully selected to provide a balanced representation of biblical wisdom. We consider various factors including the liturgical calendar, seasonal themes, and contemporary relevance. Each verse is chosen to offer meaningful insights and practical wisdom for daily life, drawing from the rich tradition of biblical teaching and interpretation.",
+      "q2": "Can I access previous daily verses?",
+      "a2": "Yes, you can access our archive of daily verses. This feature allows you to revisit meaningful passages and continue your reflection on specific themes or teachings. The archive is organized chronologically and by theme, making it easy to find verses that resonate with your current spiritual journey or personal needs."
+    },
+    "technical": {
+      "title": "Technical Questions",
+      "q1": "Is the platform available in multiple languages?",
+      "a1": "Yes, our platform supports multiple languages to make biblical wisdom accessible to a global audience. We offer translations of both the interface and the biblical content, ensuring that users can engage with the material in their preferred language. Our translations are carefully reviewed to maintain the accuracy and nuance of the original biblical texts.",
+      "q2": "How can I report technical issues?",
+      "a2": "If you encounter any technical issues, you can report them through our contact form or email support. We strive to address all technical concerns promptly to ensure a smooth experience for all users. Your feedback helps us improve the platform and better serve our community of users seeking biblical wisdom."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Our commitment to protecting your privacy while sharing biblical wisdom",
+    "collection": {
+      "title": "Information Collection",
+      "description": "We collect information to provide you with a personalized experience of biblical wisdom and guidance. This includes:",
+      "items": {
+        "personal": "Personal information such as language preferences and reading history to enhance your experience with biblical content",
+        "usage": "Usage data to improve our platform's features and make biblical wisdom more accessible",
+        "cookies": "Cookies to remember your preferences and provide a seamless experience across our biblical resources",
+        "thirdParty": "Information from third-party services that help us deliver biblical content effectively"
+      }
+    },
+    "usage": {
+      "title": "Information Usage",
+      "description": "We use your information to enhance your experience with biblical wisdom:",
+      "items": {
+        "service": "To provide personalized daily Bible verses and biblical guidance",
+        "improvement": "To improve our platform's features and make biblical wisdom more accessible",
+        "communication": "To send you relevant biblical insights and updates about our services",
+        "security": "To protect your information and ensure a safe environment for exploring biblical wisdom"
+      }
+    },
+    "protection": {
+      "title": "Data Protection",
+      "description": "We implement robust security measures to protect your information:",
+      "items": {
+        "encryption": "Advanced encryption to secure your personal information and biblical reading history",
+        "access": "Strict access controls to protect your data from unauthorized access",
+        "storage": "Secure storage systems for your information and biblical preferences",
+        "monitoring": "Regular security monitoring to ensure the safety of your data"
+      }
+    },
+    "rights": {
+      "title": "Your Rights",
+      "description": "You have control over your information:",
+      "items": {
+        "access": "Access your personal information and biblical reading history",
+        "correction": "Correct any inaccuracies in your information",
+        "deletion": "Request deletion of your information",
+        "objection": "Object to the processing of your information"
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "If you have any questions about our privacy policy or how we handle your information, please contact us:",
+      "details": "Email: privacy@biblicalwisdomguide.com\nPhone: +1 (555) 123-4567\nAddress: 123 Biblical Way, Wisdom City, WC 12345"
+    }
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "subtitle": "Guidelines for using our biblical wisdom platform",
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "description": "By accessing and using Biblical Wisdom Guide, you agree to these terms and conditions. These terms govern your use of our biblical content and services.",
+      "items": {
+        "agreement": "You agree to use the platform in accordance with biblical principles and values",
+        "eligibility": "You must be of legal age to access biblical content in your jurisdiction",
+        "modifications": "We may modify these terms to better serve our biblical mission"
+      }
+    },
+    "usage": {
+      "title": "Platform Usage",
+      "description": "Guidelines for using our biblical wisdom platform:",
+      "items": {
+        "authorized": "Use the platform for personal spiritual growth and biblical study",
+        "prohibited": "Do not misuse or misrepresent biblical content",
+        "content": "Respect the sacred nature of biblical texts and interpretations",
+        "interference": "Do not interfere with others' access to biblical wisdom"
+      }
+    },
+    "intellectual": {
+      "title": "Intellectual Property",
+      "description": "Our commitment to protecting biblical content:",
+      "items": {
+        "copyright": "Biblical texts are used with proper attribution and respect",
+        "trademarks": "Our platform's name and branding are protected",
+        "content": "User-generated content must respect biblical principles",
+        "licenses": "Proper licensing for biblical translations and commentaries"
+      }
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "description": "Understanding our responsibilities:",
+      "items": {
+        "disclaimer": "We provide biblical guidance but not professional advice",
+        "limitation": "We are not liable for personal interpretation of biblical content",
+        "indemnification": "Users agree to indemnify us for misuse of biblical content"
+      }
+    },
+    "termination": {
+      "title": "Termination",
+      "description": "Conditions for account termination:",
+      "items": {
+        "grounds": "Violation of biblical principles or terms of use",
+        "effects": "Loss of access to biblical content and services",
+        "survival": "Certain terms survive termination"
+      }
+    },
+    "contact": {
+      "title": "Contact Information",
+      "description": "For questions about these terms:",
+      "details": "Email: terms@biblicalwisdomguide.com\nPhone: +1 (555) 123-4567\nAddress: 123 Biblical Way, Wisdom City, WC 12345"
+    }
+  }
+} 
