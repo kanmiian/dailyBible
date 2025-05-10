@@ -1,15 +1,9 @@
 "use client"
 
-import type { Metadata } from "next"
 import RandomStory from "@/components/random-story"
 import Link from "next/link"
 import { useLanguage } from "@/context/language-context"
 import { ArrowLeft, BookOpen } from "lucide-react"
-import { generateSEO } from "@/lib/seo"
-
-export async function generateMetadata(): Promise<Metadata> {
-  return generateSEO({ lang: 'en', path: '/daily-bible-story' })
-}
 
 export default function DailyBibleStory() {
   const { t } = useLanguage()
