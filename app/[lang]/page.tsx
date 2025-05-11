@@ -4,12 +4,16 @@ import { generateSEO } from '@/lib/seo'
 
 type Props = {
   params: { lang: string }
+  searchParams: { [key: string]: string | string[] | undefined }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  return generateSEO({ lang: params.lang, path: '/' })
+  const resolvedParams = await params
+  const lang = resolvedParams.lang === 'zh' || resolvedParams.lang === 'en' ? resolvedParams.lang : 'en'
+  return await generateSEO({ lang, path: '/' })
 }
 
-export default function Home({ params }: Props) {
-  return <HomeContent lang={params.lang} />
+export default async function HomePage({ params }: Props) {
+  const lang = params.lang === 'zh' || params.lang === 'en' ? params.lang : 'en'
+  return <HomeContent lang={lang} />
 }

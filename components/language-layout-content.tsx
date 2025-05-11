@@ -1,28 +1,34 @@
 "use client"
 
-import { useEffect } from "react"
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
+import { useLanguage } from "@/context/language-context"
+import { useTheme } from "next-themes"
+import { useEffect, useState } from "react"
 
-export default function LanguageLayoutContent({ 
-  children, 
-  lang 
-}: { 
-  children: React.ReactNode; 
-  lang: string 
-}) {
-  // Update the HTML lang attribute to match the current language
+type Language = 'en' | 'zh'
+
+interface LanguageLayoutContentProps {
+  children: React.ReactNode
+  lang: Language
+}
+
+export default function LanguageLayoutContent({ children, lang }: LanguageLayoutContentProps) {
+  const { setLanguage } = useLanguage()
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
   useEffect(() => {
-    if (document && document.documentElement) {
-      document.documentElement.lang = lang;
-    }
-  }, [lang]);
+    setLanguage(lang)
+    setMounted(true)
+  }, [lang, setLanguage])
+
+  // 防止水合不匹配
+  if (!mounted) {
+    return null
+  }
 
   return (
-    <>
-      <Navigation />
+    <div className={`min-h-screen transition-colors duration-300 ${theme === 'dark' ? 'dark' : ''}`}>
       {children}
-      <Footer />
-    </>
+    </div>
   )
 }
