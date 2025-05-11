@@ -21,12 +21,12 @@ export default function Navigation() {
   const isActive = (path: string) => pathname === path
 
   return (
-    <header className="bg-ivory dark:bg-darker-brown border-b border-amber-200 dark:border-amber-900 transition-colors duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-ivory dark:bg-darker-brown border-b border-amber-200 dark:border-amber-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16" suppressHydrationWarning>
           <div>
             <Link href={`/${language}`} className="text-xl font-serif text-amber-900 dark:text-amber-100 hover:text-amber-700 dark:hover:text-amber-300 transition-colors duration-300">
-              {t("home.title")}
+              {t("home.navTitle")}
             </Link>
           </div>
 

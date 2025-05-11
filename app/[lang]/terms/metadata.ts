@@ -1,10 +1,7 @@
 import { Metadata } from "next"
 import { generateSEO } from "@/lib/seo"
 
-type Props = {
-  params: { lang: string }
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  return generateSEO({ lang: params.lang, path: '/terms' })
+export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+  const lang = params.lang
+  return generateSEO({ lang, path: '/terms' })
 } 

@@ -1,7 +1,7 @@
 "use client"
 
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 
 type Language = "zh" | "en"
 
@@ -14,63 +14,66 @@ type LanguageContextType = {
 const translations = {
   zh: {
     // Navigation
-    "nav.home": "圣经首页",
-    "nav.daily_story": "每日圣经金句",
+    "nav.home": "首页",
+    "nav.daily_story": "每日圣经故事",
     "nav.book_of_answers": "圣经答案之书",
+    "nav.faq": "常见问题",
 
     // Home
-    "home.title": "圣经之光 · 照亮人生",
-    "home.subtitle": "在圣经的永恒智慧中锚定生命，汲取圣经力量与心灵安宁",
-    "home.getStarted": "开启圣经智慧之旅",
-    "home.aboutWebsite.title": "圣经数字圣殿的奥秘",
-    "home.aboutWebsite.description": "欢迎莅临圣经智慧灯塔——您每日不可或缺的圣经指南。我们精心构建的圣经平台将圣经的古老智慧与现代生活无缝连接，通过深度解析圣经故事、提供实时互动指引，让圣经的话语成为您每日生活的明灯。",
-    "home.aboutWebsite.features.title": "圣经核心特色功能",
-    "home.aboutWebsite.features.multilingual": "圣经多语言支持，全球信徒共沐圣经",
-    "home.aboutWebsite.features.dailyVerses": "每日精选圣经经文与灵修反思",
-    "home.aboutWebsite.features.bookOfAnswers": "圣经启示录互动问答系统",
-    "home.aboutWebsite.features.userFriendly": "圣经主题沉浸式导航体验",
-    "home.bibleIntro.title": "圣经：永恒的生命之书",
-    "home.bibleIntro.description": "圣经不仅是人类文明的瑰宝，更是上帝亲授的生命指南。这部跨越千年的圣经通过66卷书卷、1189章圣经故事和31,102节经文，持续为21世纪的信徒提供圣经智慧。每一则圣经故事都是神与人对话的见证，每句经文都蕴藏着改变生命的神圣力量。",
-    "home.bibleIntro.keyPoints.title": "圣经核心启示",
-    "home.bibleIntro.keyPoints.divineInspiration": "圣灵默示的圣经文本权威性",
-    "home.bibleIntro.keyPoints.historicalSignificance": "跨越4000年的圣经历史脉络",
-    "home.bibleIntro.keyPoints.spiritualGuidance": "圣经故事中的现代生活解决方案",
-    "home.bibleIntro.keyPoints.culturalImpact": "圣经智慧对全球文明的奠基性影响",
-    "home.dailyBibleStory.title": "每日圣经金句",
-    "home.dailyBibleStory.description": "每日清晨，让圣经金句成为您灵修的晨星。我们精选从创世纪到启示录的圣经经文，配合多媒体互动功能，带您身临其境体验圣经智慧。每个圣经金句都配有现代应用指南，让古老圣经智慧点亮您的数字生活。",
-    "home.dailyBibleStory.readNow": "即刻进入圣经金句",
-    "home.dailyBibleStory.features.title": "圣经金句特色",
-    "home.dailyBibleStory.features.dailyStories": "365天不间断圣经金句供应",
-    "home.dailyBibleStory.features.interactive": "圣经场景3D沉浸式体验",
-    "home.dailyBibleStory.features.reflection": "圣经智慧反思日记功能",
-    "home.dailyBibleStory.features.growth": "个人圣经灵性成长轨迹追踪",
+    "home.title": "每日圣经故事 - 让圣经智慧照亮生活",
+    "home.navTitle": "圣经之光 · 照亮人生",
+    "home.subtitle": "通过每日精选的圣经故事，让神的智慧指引你的每一天",
+    "home.getStarted": "开始探索圣经故事",
+    "home.aboutWebsite.title": "探索圣经故事的宝库",
+    "home.aboutWebsite.description": "欢迎来到每日圣经故事平台，这里汇集了圣经中最精彩的故事，从创世纪到启示录。我们精心挑选的圣经故事不仅帮助您了解圣经的历史，更能让您从中获得生活的智慧和力量。每个故事都配有详细的解释和应用指南，帮助您将圣经的教导应用到日常生活中。",
+    "home.aboutWebsite.features.title": "核心功能",
+    "home.aboutWebsite.features.multilingual": "中英双语圣经故事，满足不同语言需求",
+    "home.aboutWebsite.features.dailyVerses": "每日更新的圣经故事，带您探索圣经的奥秘",
+    "home.aboutWebsite.features.bookOfAnswers": "圣经答案之书，为您解答生活中的困惑",
+    "home.aboutWebsite.features.userFriendly": "简洁直观的界面，轻松浏览圣经故事",
+    "home.bibleIntro.title": "圣经故事：永恒的智慧宝库",
+    "home.bibleIntro.description": "圣经中蕴含着无数精彩的故事，从亚当夏娃到耶稣基督，从大卫王到使徒保罗。这些故事不仅记录了历史，更传递着永恒的真理。通过阅读这些故事，我们可以学习如何面对生活的挑战，如何建立与神的关系，如何活出更有意义的人生。",
+    "home.bibleIntro.keyPoints.title": "圣经故事的价值",
+    "home.bibleIntro.keyPoints.divineInspiration": "神所启示的真理，指引人生方向",
+    "home.bibleIntro.keyPoints.historicalSignificance": "跨越千年的历史见证，展现神的作为",
+    "home.bibleIntro.keyPoints.spiritualGuidance": "通过故事传递的属灵智慧，帮助灵命成长",
+    "home.bibleIntro.keyPoints.culturalImpact": "影响人类文明的经典故事，塑造价值观",
+    "home.dailyBibleStory.title": "每日圣经故事",
+    "home.dailyBibleStory.description": "每天精选一个圣经故事，带您深入探索圣经的奥秘。每个故事都配有详细的解释和现代应用，帮助您理解故事背后的真理，并将其应用到日常生活中。无论是创世记的创造故事，还是福音书中的耶稣比喻，都能让您获得新的启示和力量。",
+    "home.dailyBibleStory.readNow": "阅读今日圣经故事",
+    "home.dailyBibleStory.features.title": "故事特色",
+    "home.dailyBibleStory.features.dailyStories": "365天不间断更新，每天都有新故事",
+    "home.dailyBibleStory.features.interactive": "互动式阅读体验，深入理解故事",
+    "home.dailyBibleStory.features.reflection": "故事反思与讨论，促进灵命成长",
+    "home.dailyBibleStory.features.growth": "个人灵修记录，追踪属灵成长",
     "home.bookOfAnswers.title": "圣经答案之书",
-    "home.bookOfAnswers.description": "当人生遭遇迷雾时，让圣经成为您的GPS导航系统。通过人工智能驱动的圣经智慧引擎，我们将从66卷圣经书卷中为您提取属天答案。无论是职场抉择还是家庭关系，圣经的永恒真理都将给出超越时空的完美指引。",
-    "home.bookOfAnswers.tryNow": "获取圣经答案",
-    "home.bookOfAnswers.features.title": "圣经答疑优势",
-    "home.bookOfAnswers.features.divineGuidance": "基于圣经原文的神圣指引",
-    "home.bookOfAnswers.features.personalReflection": "圣经经文个性化匹配系统",
-    "home.bookOfAnswers.features.spiritualGrowth": "圣经智慧成长评估报告",
-    "home.bookOfAnswers.features.dailyWisdom": "圣经金句智能推送服务",
+    "home.bookOfAnswers.description": "当您在生活中遇到困惑时，让圣经故事为您指引方向。通过圣经答案之书，您可以找到与您当前处境相关的圣经故事，从中获得智慧和指引。无论是工作、家庭还是人际关系的问题，都能在圣经故事中找到答案。",
+    "home.bookOfAnswers.tryNow": "寻找圣经答案",
+    "home.bookOfAnswers.features.title": "答案特色",
+    "home.bookOfAnswers.features.divineGuidance": "基于圣经原文的智慧指引",
+    "home.bookOfAnswers.features.personalReflection": "个性化故事推荐，贴合您的需求",
+    "home.bookOfAnswers.features.spiritualGrowth": "通过故事促进灵命成长",
+    "home.bookOfAnswers.features.dailyWisdom": "每日更新故事，持续获得智慧",
 
     // Footer
-    "footer.rights": "圣经智慧版权神圣不可侵犯",
-    "footer.quote": "圣经话语是脚前的灯，路上的光，更是数字时代的永恒坐标（诗篇119:105）",
-    "footer.quickLinks": "快速查经通道",
-    "footer.aboutUs": "关于圣经平台",
-    "footer.faq": "圣经常见问题",
-    "footer.privacy": "圣经平台隐私政策",
-    "footer.terms": "圣经平台服务条款",
+    "footer.rights": "© 2024 圣经智慧指南. 保留所有权利。",
+    "footer.quote": "你的话是我脚前的灯，是我路上的光（诗篇119:105）",
+    "footer.quickLinks": "快速链接",
+    "footer.friends": "友情链接",
+    "footer.aboutUs": "关于我们",
+    "footer.faq": "常见问题",
+    "footer.privacy": "隐私政策",
+    "footer.terms": "服务条款",
     "footer.contact": "联系我们",
-    "footer.contactInfo": "若有圣经相关问题，欢迎联系我们",
+    "footer.contactInfo": "如有任何问题，请随时联系我们",
 
     // Theme
-    "theme.light": "圣经晨光模式",
-    "theme.dark": "圣经星空模式",
+    "theme.light": "浅色模式",
+    "theme.dark": "深色模式",
 
     // Language
     "lang.zh": "中文",
-    "lang.en": "英文",
+    "lang.en": "English",
 
     // About
     "about.title": "关于圣经平台",
@@ -161,62 +164,65 @@ const translations = {
   },
   en: {
     // Navigation
-    "nav.home": "Bible Home",
-    "nav.daily_story": "Daily Bible Verse",
-    "nav.book_of_answers": "Bible Book of Answers",
+    "nav.home": "Home",
+    "nav.daily_story": "Daily Bible Story",
+    "nav.book_of_answers": "Book of Answers",
+    "nav.faq": "FAQ",
 
     // Home
-    "home.title": "Bible Light - Illuminate Life",
-    "home.subtitle": "Anchor Your Soul in Bible Wisdom, Harvest Bible Strength and Divine Peace",
-    "home.getStarted": "Start Your Bible Journey",
-    "home.aboutWebsite.title": "Digital Bible Sanctuary",
-    "home.aboutWebsite.description": "Welcome to the Bible Lighthouse - Your daily Bible navigation system. We bridge ancient Bible truths with modern life through immersive Bible story experiences and AI-powered Bible guidance, making God's Word a living compass for digital generations.",
-    "home.aboutWebsite.features.title": "Core Bible Features",
-    "home.aboutWebsite.features.multilingual": "Multilingual Bible Access for Global Disciples",
-    "home.aboutWebsite.features.dailyVerses": "Curated Daily Bible Passages & Devotions",
-    "home.aboutWebsite.features.bookOfAnswers": "Interactive Bible Answer Engine",
-    "home.aboutWebsite.features.userFriendly": "Immersive Bible Navigation Interface",
-    "home.bibleIntro.title": "Bible: The Eternal Book of Life",
-    "home.bibleIntro.description": "More than a historical relic, the Bible is God's living love letter containing 66 sacred Bible books, 1,189 chapters of Bible narratives, and 31,102 verses of Bible wisdom. Each Bible story forms a mosaic of God's redemptive plan, every verse carrying transformative power for 21st-century believers.",
-    "home.bibleIntro.keyPoints.title": "Bible Cornerstones",
-    "home.bibleIntro.keyPoints.divineInspiration": "Spirit-Breathed Bible Authority",
-    "home.bibleIntro.keyPoints.historicalSignificance": "4,000-Year Bible Timeline",
-    "home.bibleIntro.keyPoints.spiritualGuidance": "Life Solutions from Bible Stories",
-    "home.bibleIntro.keyPoints.culturalImpact": "Bible's Foundational Global Influence",
-    "home.dailyBibleStory.title": "Daily Bible Verse",
-    "home.dailyBibleStory.description": "Start each dawn with living Bible verses. Journey from Genesis to Revelation through multimedia-enhanced Bible passages. Experience the power of Bible scripture in interactive 4D. Each Bible verse comes with modern application guides, making ancient Bible wisdom relevant today.",
-    "home.dailyBibleStory.readNow": "Enter Bible Verse",
-    "home.dailyBibleStory.features.title": "Bible Experience Features",
-    "home.dailyBibleStory.features.dailyStories": "365-Day Bible Verse Journey",
-    "home.dailyBibleStory.features.interactive": "3D Bible Scene Immersion",
-    "home.dailyBibleStory.features.reflection": "Bible Reflection Journal",
-    "home.dailyBibleStory.features.growth": "Personal Bible Growth Analytics",
+    "home.navTitle": "Bible Light - Illuminate Life",
+    "home.title": "Daily Bible Stories - Let Biblical Wisdom Illuminate Your Life",
+    "home.subtitle": "Discover God's wisdom through carefully selected Bible stories every day",
+    "home.getStarted": "Explore Bible Stories",
+    "home.aboutWebsite.title": "Explore the Treasure of Bible Stories",
+    "home.aboutWebsite.description": "Welcome to the Daily Bible Stories platform, where we bring together the most inspiring stories from Genesis to Revelation. Our carefully selected Bible stories not only help you understand biblical history but also provide wisdom and strength for daily living. Each story comes with detailed explanations and practical applications to help you apply biblical teachings to your life.",
+    "home.aboutWebsite.features.title": "Core Features",
+    "home.aboutWebsite.features.multilingual": "Bilingual Bible stories in Chinese and English",
+    "home.aboutWebsite.features.dailyVerses": "Daily updated Bible stories exploring biblical mysteries",
+    "home.aboutWebsite.features.bookOfAnswers": "Book of Answers to guide your life's questions",
+    "home.aboutWebsite.features.userFriendly": "Intuitive interface for easy Bible story navigation",
+    "home.bibleIntro.title": "Bible Stories: Eternal Wisdom Treasury",
+    "home.bibleIntro.description": "The Bible contains countless inspiring stories, from Adam and Eve to Jesus Christ, from King David to Apostle Paul. These stories not only record history but also convey eternal truths. Through reading these stories, we learn how to face life's challenges, build a relationship with God, and live a more meaningful life.",
+    "home.bibleIntro.keyPoints.title": "Value of Bible Stories",
+    "home.bibleIntro.keyPoints.divineInspiration": "God-revealed truths guiding life's direction",
+    "home.bibleIntro.keyPoints.historicalSignificance": "Millennium-spanning historical testimonies",
+    "home.bibleIntro.keyPoints.spiritualGuidance": "Spiritual wisdom through stories for growth",
+    "home.bibleIntro.keyPoints.culturalImpact": "Classic stories shaping human civilization",
+    "home.dailyBibleStory.title": "Daily Bible Stories",
+    "home.dailyBibleStory.description": "Each day features a carefully selected Bible story, taking you deep into biblical mysteries. Every story includes detailed explanations and modern applications to help you understand the truths behind the stories and apply them to daily life. From Genesis creation stories to Jesus' parables in the Gospels, each story brings new revelations and strength.",
+    "home.dailyBibleStory.readNow": "Read Today's Bible Story",
+    "home.dailyBibleStory.features.title": "Story Features",
+    "home.dailyBibleStory.features.dailyStories": "365 days of continuous updates",
+    "home.dailyBibleStory.features.interactive": "Interactive reading experience",
+    "home.dailyBibleStory.features.reflection": "Story reflection and discussion",
+    "home.dailyBibleStory.features.growth": "Personal devotion tracking",
     "home.bookOfAnswers.title": "Bible Book of Answers",
-    "home.bookOfAnswers.description": "When life's crossroads appear, let Bible wisdom be your GPS. Our AI-driven Bible engine mines answers from 66 sacred Bible books. Whether career dilemmas or family matters, receive transcendent guidance from eternal Bible truths.",
-    "home.bookOfAnswers.tryNow": "Seek Bible Answers",
-    "home.bookOfAnswers.features.title": "Bible Answer Advantages",
-    "home.bookOfAnswers.features.divineGuidance": "Original Language Bible Analysis",
-    "home.bookOfAnswers.features.personalReflection": "Personalized Bible Verse Matching",
-    "home.bookOfAnswers.features.spiritualGrowth": "Bible Progress Reports",
-    "home.bookOfAnswers.features.dailyWisdom": "AI-Curated Bible Verse Alerts",
+    "home.bookOfAnswers.description": "When you face life's questions, let Bible stories guide you. Through the Book of Answers, you can find Bible stories relevant to your current situation, gaining wisdom and guidance. Whether it's work, family, or relationship issues, you'll find answers in Bible stories.",
+    "home.bookOfAnswers.tryNow": "Find Bible Answers",
+    "home.bookOfAnswers.features.title": "Answer Features",
+    "home.bookOfAnswers.features.divineGuidance": "Wisdom based on original Bible texts",
+    "home.bookOfAnswers.features.personalReflection": "Personalized story recommendations",
+    "home.bookOfAnswers.features.spiritualGrowth": "Spiritual growth through stories",
+    "home.bookOfAnswers.features.dailyWisdom": "Daily updated stories for continuous wisdom",
 
     // Footer
-    "footer.rights": "Sacred Bible Copyright",
-    "footer.quote": "Your Bible Word is a lamp to my feet and a light to my path - now my digital compass (Psalm 119:105)",
-    "footer.quickLinks": "Quick Bible Finder",
-    "footer.aboutUs": "About Bible Platform",
-    "footer.faq": "Bible FAQs",
-    "footer.privacy": "Bible Privacy Policy",
-    "footer.terms": "Bible Terms of Service",
+    "footer.rights": "© 2024 Biblical Wisdom Guide. All rights reserved.",
+    "footer.quote": "Your word is a lamp to my feet and a light to my path (Psalm 119:105)",
+    "footer.quickLinks": "Quick Links",
+    "footer.friends": "Friends",
+    "footer.aboutUs": "About Us",
+    "footer.faq": "FAQ",
+    "footer.privacy": "Privacy Policy",
+    "footer.terms": "Terms of Service",
     "footer.contact": "Contact Us",
-    "footer.contactInfo": "For Bible-related questions, feel free to reach out.",
+    "footer.contactInfo": "Feel free to reach out if you have any questions",
 
     // Theme
-    "theme.light": "Bible Daylight",
-    "theme.dark": "Bible Night",
+    "theme.light": "Light Mode",
+    "theme.dark": "Dark Mode",
 
     // Language
-    "lang.zh": "Chinese",
+    "lang.zh": "中文",
     "lang.en": "English",
 
     // About
@@ -310,54 +316,43 @@ const translations = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
+export function LanguageProvider({ 
+  children,
+  initialLang = "en"
+}: { 
+  children: ReactNode
+  initialLang?: Language 
+}) {
+  const [language, setLanguageState] = useState<Language>(initialLang)
   const pathname = usePathname()
-  const [language, setLanguageState] = useState<Language>("en")
+  const router = useRouter()
 
   useEffect(() => {
-    // First priority: Get language from URL path
-    const langFromPath = pathname?.split('/')[1]
-    if (langFromPath === 'zh' || langFromPath === 'en') {
-      setLanguageState(langFromPath)
-      if (typeof window !== 'undefined') {
-        localStorage.setItem("language", langFromPath)
-      }
-      return
-    }
-
-    // Second priority: Get language from localStorage if available
-    if (typeof window !== 'undefined') {
-      const savedLanguage = localStorage.getItem("language") as Language
-      if (savedLanguage && (savedLanguage === "zh" || savedLanguage === "en")) {
-        setLanguageState(savedLanguage)
-        return
-      }
-    }
-
-    // Default to English if no language is specified
-    setLanguageState("en")
-    if (typeof window !== 'undefined') {
-      localStorage.setItem("language", "en")
+    // 从 URL 路径获取语言
+    const pathLang = pathname.split('/')[1]
+    if (pathLang === 'zh' || pathLang === 'en') {
+      setLanguageState(pathLang)
     }
   }, [pathname])
 
   const setLanguage = (lang: Language) => {
+    if (lang === language) return // 如果语言没有改变，不执行任何操作
+    
     setLanguageState(lang)
-    if (typeof window !== 'undefined') {
-      localStorage.setItem("language", lang)
-      // Update URL path when language changes
-      const currentPath = window.location.pathname
-      const pathWithoutLang = currentPath.split('/').slice(2).join('/')
-      const newPath = `/${lang}/${pathWithoutLang}`
-      window.history.pushState({}, '', newPath)
-    }
+    // 更新 URL 路径
+    const newPath = pathname.replace(/^\/[^/]+/, `/${lang}`)
+    router.push(newPath)
   }
 
   const t = (key: string): string => {
-    return translations[language][key as keyof (typeof translations)[typeof language]] || key
+    return translations[language][key as keyof typeof translations[typeof language]] || key
   }
 
-  return <LanguageContext.Provider value={{ language, setLanguage, t }}>{children}</LanguageContext.Provider>
+  return (
+    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+      {children}
+    </LanguageContext.Provider>
+  )
 }
 
 export function useLanguage() {

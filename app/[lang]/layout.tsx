@@ -1,44 +1,40 @@
 import { LanguageProvider } from "@/context/language-context"
 import { ThemeProvider } from "next-themes"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
 import "@/app/globals.css"
 import { generateMetadata as generateLangMetadata } from "../metadata"
+import LanguageLayoutContent from "@/components/language-layout-content"
+import { Metadata } from "next"
 
 type Props = {
   params: { lang: string }
+  children: React.ReactNode
 }
 
-export async function generateMetadata({ params }: Props) {
-  return generateLangMetadata(params.lang)
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const lang = params.lang === 'zh' || params.lang === 'en' ? params.lang : 'en'
+  return await generateLangMetadata(lang)
 }
 
-function ClientLayout({ children, lang }: { children: React.ReactNode; lang: string }) {
+export default async function LanguageLayout({ children, params }: Props) {
+  const lang = params.lang === 'zh' || params.lang === 'en' ? params.lang : 'en'
+  
   return (
     <html lang={lang} suppressHydrationWarning>
-      <body className="min-h-screen bg-ivory dark:bg-dark-brown text-amber-950 dark:text-amber-100">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <LanguageProvider>
-            <div className="flex flex-col min-h-screen">
-              <Navbar />
-              <main className="flex-grow pt-16">
-                {children}
-              </main>
-              <Footer />
-            </div>
-          </LanguageProvider>
-        </ThemeProvider>
+      <body className="bg-ivory dark:bg-darker-brown">
+        <LanguageProvider initialLang={lang}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem={false}
+            disableTransitionOnChange={false}
+            storageKey="v0bible-theme"
+            forcedTheme={undefined}
+            themes={["light", "dark"]}
+          >
+            <LanguageLayoutContent lang={lang}>{children}</LanguageLayoutContent>
+          </ThemeProvider>
+        </LanguageProvider>
       </body>
     </html>
   )
-}
-
-export default function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode
-  params: { lang: string }
-}) {
-  return <ClientLayout lang={params.lang}>{children}</ClientLayout>
 }

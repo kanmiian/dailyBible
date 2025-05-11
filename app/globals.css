@@ -292,4 +292,24 @@ body {
   .sacred-hover > * {
     @apply relative z-10;
   }
+
+  .background-content-container {
+    position: relative;
+  }
+
+  .background-content-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.5;
+    z-index: -1;
+  }
 }
