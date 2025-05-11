@@ -165,8 +165,8 @@ export default function FAQContent({ lang }: { lang: string }) {
               </h3>
               <p className="text-lg text-amber-700 dark:text-amber-300">
                 {language === "en" ?
-                  "Our support team is available to assist you with any questions or issues you may encounter. You can reach us through the contact form on our website, or by emailing support@biblicalwisdomguide.com. We strive to respond to all inquiries within 24-48 hours during business days." :
-                  "我们的支持团队可以帮助您解决您可能遇到的任何问题。您可以通过我们网站上的联系表单联系我们，或发送电子邮件至support@biblicalwisdomguide.com。我们努力在工作日内24-48小时内回复所有询问。"
+                  "Our support team is available to assist you with any questions or issues you may encounter. You can reach us through the contact form on our website, or by emailing bless@bibleforu.infoWe strive to respond to all inquiries within 24-48 hours during business days." :
+                  "我们的支持团队可以帮助您解决您可能遇到的任何问题。您可以通过我们网站上的联系表单联系我们，或发送电子邮件至bless@bibleforu.info。我们努力在工作日内24-48小时内回复所有询问。"
                 }
               </p>
             </div>
@@ -177,8 +177,8 @@ export default function FAQContent({ lang }: { lang: string }) {
               </h3>
               <p className="text-lg text-amber-700 dark:text-amber-300">
                 {language === "en" ?
-                  "Absolutely! We value user feedback and actively incorporate suggestions into our development roadmap. You can submit feature requests and content ideas through our feedback form or by emailing suggestions@biblicalwisdomguide.com. Many of our most popular features began as user suggestions, and we're always eager to hear how we can better serve your spiritual journey." :
-                  "当然可以！我们重视用户反馈，并积极将建议纳入我们的开发路线图。您可以通过我们的反馈表单或发送电子邮件至suggestions@biblicalwisdomguide.com提交功能请求和内容想法。我们许多最受欢迎的功能都始于用户建议，我们始终渴望听取如何更好地服务于您的灵性旅程。"
+                  "Absolutely! We value user feedback and actively incorporate suggestions into our development roadmap. You can submit feature requests and content ideas through our feedback form or by emailing bless@bibleforu.info. Many of our most popular features began as user suggestions, and we're always eager to hear how we can better serve your spiritual journey." :
+                  "当然可以！我们重视用户反馈，并积极将建议纳入我们的开发路线图。您可以通过我们的反馈表单或发送电子邮件至bless@bibleforu.info提交功能请求和内容想法。我们许多最受欢迎的功能都始于用户建议，我们始终渴望听取如何更好地服务于您的灵性旅程。"
                 }
               </p>
             </div>
