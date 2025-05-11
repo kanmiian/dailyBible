@@ -26,7 +26,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16" suppressHydrationWarning>
           <div>
             <Link href={`/${language}`} className="text-xl font-serif text-amber-900 dark:text-amber-100 hover:text-amber-700 dark:hover:text-amber-300 transition-colors duration-300">
-              {t("home.title")}
+              {t("home.navTitle")}
             </Link>
           </div>
 

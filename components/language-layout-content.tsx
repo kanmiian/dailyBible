@@ -27,7 +27,7 @@ export default function LanguageLayoutContent({ children, lang }: LanguageLayout
   }
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${theme === 'dark' ? 'dark' : ''}`}>
+    <div className={`background-content-container min-h-screen transition-colors duration-300 ${theme === 'dark' ? 'dark' : ''}`}>
       {children}
     </div>
   )
