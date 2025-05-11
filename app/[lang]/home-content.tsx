@@ -11,7 +11,7 @@ export default function HomeContent({ lang }: { lang: string }) {
   return (
     <main className="flex-1">
       {/* Hero Section */}
-      <section className="py-12 md:py-24 lg:py-32">
+      <section className="py-12 md:py-24 lg:py-32 background-content-container">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-8 text-center">
             <div className="space-y-4">
