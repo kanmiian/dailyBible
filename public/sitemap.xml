@@ -60,8 +60,14 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://bibleforu.info/zh/book-of-answers</loc>
+   <url>
+    <loc>https://bibleforu.info/zh/bible-verse-picker</loc>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+   <url>
+    <loc>https://bibleforu.info/en/bible-verse-picker</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>

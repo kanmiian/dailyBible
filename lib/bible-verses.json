@@ -218,5 +218,445 @@
       "zh": "诗篇 119:11",
       "en": "Psalm 119:11"
     }
+  },
+  {
+    "id": 21,
+    "text": {
+      "zh": "你要专心仰赖耶和华，不可倚靠自己的聪明，在你一切所行的事上都要认定他，他必指引你的路。",
+      "en": "Trust in the LORD with all your heart, and lean not on your own understanding; in all your ways acknowledge him, and he will make your paths straight."
+    },
+    "reference": {
+      "zh": "箴言 3:5-6",
+      "en": "Proverbs 3:5-6"
+    }
+  },
+  {
+    "id": 22,
+    "text": {
+      "zh": "耶和华说：我知道我向你们所怀的意念是赐平安的意念，不是降灾祸的意念，要叫你们末后有指望。",
+      "en": "For I know the plans I have for you,” declares the LORD, “plans to prosper you and not to harm you, plans to give you hope and a future."
+    },
+    "reference": {
+      "zh": "耶利米书 29:11",
+      "en": "Jeremiah 29:11"
+    }
+  },
+  {
+    "id": 23,
+    "text": {
+      "zh": "不要效法这个世界，只要心意更新而变化，叫你们察验何为神的善良、纯全、可喜悦的旨意。",
+      "en": "Do not be conformed to this world, but be transformed by the renewing of your mind, that you may prove what is that good and acceptable and perfect will of God."
+    },
+    "reference": {
+      "zh": "罗马书 12:2",
+      "en": "Romans 12:2"
+    }
+  },
+  {
+    "id": 24,
+    "text": {
+      "zh": "我岂没有吩咐你吗？你当刚强壮胆！不要惧怕，也不要惊惶，因为你无论往哪里去，耶和华你的神必与你同在。",
+      "en": "Have I not commanded you? Be strong and of good courage; do not be afraid, nor be dismayed, for the LORD your God is with you wherever you go."
+    },
+    "reference": {
+      "zh": "约书亚记 1:9",
+      "en": "Joshua 1:9"
+    }
+  },
+  {
+    "id": 25,
+    "text": {
+      "zh": "但那等候耶和华的，必从新得力。他们必如鹰展翅上腾，他们奔跑却不困倦，行走却不疲乏。",
+      "en": "But those who wait on the LORD Shall renew their strength; They shall mount up with wings like eagles, They shall run and not be weary, They shall walk and not faint."
+    },
+    "reference": {
+      "zh": "以赛亚书 40:31",
+      "en": "Isaiah 40:31"
+    }
+  },
+  {
+    "id": 26,
+    "text": {
+      "zh": "因为凡被神的灵引导的，都是神的儿子。",
+      "en": "For as many as are led by the Spirit of God, these are sons of God."
+    },
+    "reference": {
+      "zh": "罗马书 8:14",
+      "en": "Romans 8:14"
+    }
+  },
+  {
+    "id": 27,
+    "text": {
+      "zh": "圣经都是神所默示的，于教训、督责、使人归正、教导人学义都是有益的。",
+      "en": "All Scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness."
+    },
+    "reference": {
+      "zh": "提摩太后书 3:16",
+      "en": "2 Timothy 3:16"
+    }
+  },
+  {
+    "id": 28,
+    "text": {
+      "zh": "凡劳苦担重担的人，可以到我这里来，我就使你们得安息。",
+      "en": "Come to me, all you who are weary and burdened, and I will give you rest."
+    },
+    "reference": {
+      "zh": "马太福音 11:28",
+      "en": "Matthew 11:28"
+    }
+  },
+  {
+    "id": 29,
+    "text": {
+      "zh": "所以，你们要去，使万民作我的门徒，奉父、子、圣灵的名给他们施洗。",
+      "en": "Go therefore and make disciples of all the nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit."
+    },
+    "reference": {
+      "zh": "马太福音 28:19",
+      "en": "Matthew 28:19"
+    }
+  },
+  {
+    "id": 30,
+    "text": {
+      "zh": "耶稣说：我就是道路、真理、生命；若不藉着我，没有人能到父那里去。",
+      "en": "Jesus said to him, “I am the way, the truth, and the life. No one comes to the Father except through Me."
+    },
+    "reference": {
+      "zh": "约翰福音 14:6",
+      "en": "John 14:6"
+    }
+  },
+  {
+    "id": 31,
+    "text": {
+      "zh": "敬畏耶和华是智慧的开端，认识至圣者便是聪明。",
+      "en": "The fear of the LORD is the beginning of wisdom, and the knowledge of the Holy One is understanding."
+    },
+    "reference": {
+      "zh": "箴言 9:10",
+      "en": "Proverbs 9:10"
+    }
+  },
+  {
+    "id": 32,
+    "text": {
+      "zh": "爱是恒久忍耐，又有恩慈；爱是不嫉妒，爱是不自夸，不张狂。",
+      "en": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud."
+    },
+    "reference": {
+      "zh": "哥林多前书 13:4",
+      "en": "1 Corinthians 13:4"
+    }
+  },
+  {
+    "id": 33,
+    "text": {
+      "zh": "所以，我们凭着信心，因耶稣基督进入现在所站的这恩典中，并且欢欢喜喜盼望神的荣耀。",
+      "en": "Through whom also we have access by faith into this grace in which we stand, and rejoice in hope of the glory of God."
+    },
+    "reference": {
+      "zh": "罗马书 5:2",
+      "en": "Romans 5:2"
+    }
+  },
+  {
+    "id": 34,
+    "text": {
+      "zh": "所以，不要为明天忧虑，因为明天自有明天的忧虑；一天的难处一天当就够了。",
+      "en": "Therefore do not worry about tomorrow, for tomorrow will worry about its own things. Sufficient for the day is its own trouble."
+    },
+    "reference": {
+      "zh": "马太福音 6:34",
+      "en": "Matthew 6:34"
+    }
+  },
+  {
+    "id": 35,
+    "text": {
+      "zh": "你们的光也当这样照在人前，叫他们看见你们的好行为，便将荣耀归给你们在天上的父。",
+      "en": "Let your light so shine before men, that they may see your good works and glorify your Father in heaven."
+    },
+    "reference": {
+      "zh": "马太福音 5:16",
+      "en": "Matthew 5:16"
+    }
+  },
+  {
+    "id": 36,
+    "text": {
+      "zh": "若有人在基督里，他就是新造的人，旧事已过，都变成新的了。",
+      "en": "Therefore, if anyone is in Christ, he is a new creation; old things have passed away; behold, all things have become new."
+    },
+    "reference": {
+      "zh": "哥林多后书 5:17",
+      "en": "2 Corinthians 5:17"
+    }
+  },
+  {
+    "id": 37,
+    "text": {
+      "zh": "你要保守你心，胜过保守一切，因为一生的果效是由心发出。",
+      "en": "Keep your heart with all diligence, For out of it spring the issues of life."
+    },
+    "reference": {
+      "zh": "箴言 4:23",
+      "en": "Proverbs 4:23"
+    }
+  },
+  {
+    "id": 38,
+    "text": {
+      "zh": "如今常存的有信，有望，有爱这三样，其中最大的是爱。",
+      "en": "And now abide faith, hope, love, these three; but the greatest of these is love."
+    },
+    "reference": {
+      "zh": "哥林多前书 13:13",
+      "en": "1 Corinthians 13:13"
+    }
+  },
+  {
+    "id": 39,
+    "text": {
+      "zh": "万军之耶和华说：不是倚靠势力，不是倚靠才能，乃是倚靠我的灵方能成事。",
+      "en": "‘Not by might nor by power, but by My Spirit,’ Says the LORD of hosts."
+    },
+    "reference": {
+      "zh": "撒迦利亚书 4:6",
+      "en": "Zechariah 4:6"
+    }
+  },
+  {
+    "id": 40,
+    "text": {
+      "zh": "神是我们的避难所，是我们的力量，是我们在患难中随时的帮助。",
+      "en": "God is our refuge and strength, a very present help in trouble."
+    },
+    "reference": {
+      "zh": "诗篇 46:1",
+      "en": "Psalm 46:1"
+    }
+  },
+  {
+    "id": 41,
+    "text": {
+      "zh": "你们是世上的盐...你们是世上的光。城造在山上是不能隐藏的。",
+      "en": "You are the salt of the earth... You are the light of the world. A city that is set on a hill cannot be hidden."
+    },
+    "reference": {
+      "zh": "马太福音 5:13-14",
+      "en": "Matthew 5:13-14"
+    }
+  },
+  {
+    "id": 42,
+    "text": {
+      "zh": "信就是所望之事的实底，是未见之事的确据。",
+      "en": "Now faith is the substance of things hoped for, the evidence of things not seen."
+    },
+    "reference": {
+      "zh": "希伯来书 11:1",
+      "en": "Hebrews 11:1"
+    }
+  },
+  {
+    "id": 43,
+    "text": {
+      "zh": "我们不致消灭，是出于耶和华诸般的慈爱；是因他的怜悯不致断绝。每早晨，这都是新的；你的诚实极其广大！",
+      "en": "Through the LORD’s mercies we are not consumed, because His compassions fail not. They are new every morning; great is Your faithfulness."
+    },
+    "reference": {
+      "zh": "耶利米哀歌 3:22-23",
+      "en": "Lamentations 3:22-23"
+    }
+  },
+  {
+    "id": 44,
+    "text": {
+      "zh": "圣灵所结的果子，就是仁爱、喜乐、和平、忍耐、恩慈、良善、信实、温柔、节制。",
+      "en": "But the fruit of the Spirit is love, joy, peace, longsuffering, kindness, goodness, faithfulness, gentleness, self-control."
+    },
+    "reference": {
+      "zh": "加拉太书 5:22-23",
+      "en": "Galatians 5:22-23"
+    }
+  },
+  {
+    "id": 45,
+    "text": {
+      "zh": "起初，神创造天地。",
+      "en": "In the beginning God created the heavens and the earth."
+    },
+    "reference": {
+      "zh": "创世记 1:1",
+      "en": "Genesis 1:1"
+    }
+  },
+  {
+    "id": 46,
+    "text": {
+      "zh": "人心筹算自己的道路；惟耶和华指引他的脚步。",
+      "en": "A man’s heart plans his way, But the LORD directs his steps."
+    },
+    "reference": {
+      "zh": "箴言 16:9",
+      "en": "Proverbs 16:9"
+    }
+  },
+  {
+    "id": 47,
+    "text": {
+      "zh": "总要察验何为主所喜悦的事。",
+      "en": "Finding out what is acceptable to the Lord."
+    },
+    "reference": {
+      "zh": "以弗所书 5:10",
+      "en": "Ephesians 5:10"
+    }
+  },
+  {
+    "id": 48,
+    "text": {
+      "zh": "盗贼来，无非要偷窃，杀害，毁坏；我来了，是要叫羊得生命，并且得的更丰盛。",
+      "en": "The thief does not come except to steal, and to kill, and to destroy. I have come that they may have life, and that they may have it more abundantly."
+    },
+    "reference": {
+      "zh": "约翰福音 10:10",
+      "en": "John 10:10"
+    }
+  },
+  {
+    "id": 49,
+    "text": {
+      "zh": "你们要将一切的忧虑卸给神，因为他顾念你们。",
+      "en": "Casting all your care upon Him, for He cares for you."
+    },
+    "reference": {
+      "zh": "彼得前书 5:7",
+      "en": "1 Peter 5:7"
+    }
+  },
+  {
+    "id": 50,
+    "text": {
+      "zh": "因为我们行事为人是凭着信心，不是凭着眼见。",
+      "en": "For we walk by faith, not by sight."
+    },
+    "reference": {
+      "zh": "哥林多后书 5:7",
+      "en": "2 Corinthians 5:7"
+    }
+  },
+  {
+    "id": 51,
+    "text": {
+      "zh": "主耶和华啊，你曾用大能和伸出来的膀臂创造天地，在你没有难成的事。",
+      "en": "‘Ah, Lord GOD! Behold, You have made the heavens and the earth by Your great power and outstretched arm. There is nothing too hard for You.'"
+    },
+    "reference": {
+      "zh": "耶利米书 32:17",
+      "en": "Jeremiah 32:17"
+    }
+  },
+  {
+    "id": 52,
+    "text": {
+      "zh": "我儿，要将你的心归我；你的眼目也要喜悦我的道路。",
+      "en": "My son, give me your heart, and let your eyes observe my ways."
+    },
+    "reference": {
+      "zh": "箴言 23:26",
+      "en": "Proverbs 23:26"
+    }
+  },
+  {
+    "id": 53,
+    "text": {
+      "zh": "又要彼此相顾，激发爱心，勉励行善。",
+      "en": "And let us consider one another in order to stir up love and good works."
+    },
+    "reference": {
+      "zh": "希伯来书 10:24",
+      "en": "Hebrews 10:24"
+    }
+  },
+  {
+    "id": 54,
+    "text": {
+      "zh": "看哪，我站在门外叩门，若有听见我声音就开门的，我要进到他那里去，我与他，他与我一同坐席。",
+      "en": "Behold, I stand at the door and knock. If anyone hears My voice and opens the door, I will come in to him and dine with him, and he with Me."
+    },
+    "reference": {
+      "zh": "启示录 3:20",
+      "en": "Revelation 3:20"
+    }
+  },
+  {
+    "id": 55,
+    "text": {
+      "zh": "神造万物，各按其时成为美好，又将永生安置在世人心里。",
+      "en": "He has made everything beautiful in its time. Also He has put eternity in their hearts."
+    },
+    "reference": {
+      "zh": "传道书 3:11",
+      "en": "Ecclesiastes 3:11"
+    }
+  },
+  {
+    "id": 56,
+    "text": {
+      "zh": "惟有基督在我们还作罪人的时候为我们死，神的爱就在此向我们显明了。",
+      "en": "But God demonstrates His own love toward us, in that while we were still sinners, Christ died for us."
+    },
+    "reference": {
+      "zh": "罗马书 5:8",
+      "en": "Romans 5:8"
+    }
+  },
+  {
+    "id": 57,
+    "text": {
+      "zh": "草必枯干，花必凋残，惟有我们神的话必永远立定。",
+      "en": "The grass withers, the flower fades, but the word of our God stands forever."
+    },
+    "reference": {
+      "zh": "以赛亚书 40:8",
+      "en": "Isaiah 40:8"
+    }
+  },
+  {
+    "id": 58,
+    "text": {
+      "zh": "你要尽心、尽性、尽力爱耶和华你的神。",
+      "en": "You shall love the LORD your God with all your heart, with all your soul, and with all your strength."
+    },
+    "reference": {
+      "zh": "申命记 6:5",
+      "en": "Deuteronomy 6:5"
+    }
+  },
+  {
+    "id": 59,
+    "text": {
+      "zh": "从他丰满的恩典里，我们都领受了，而且恩上加恩。",
+      "en": "And of His fullness we have all received, and grace for grace."
+    },
+    "reference": {
+      "zh": "约翰福音 1:16",
+      "en": "John 1:16"
+    }
+  },
+  {
+    "id": 60,
+    "text": {
+      "zh": "求你指教我们怎样数算自己的日子，好叫我们得着智慧的心。",
+      "en": "So teach us to number our days, that we may gain a heart of wisdom."
+    },
+    "reference": {
+      "zh": "诗篇 90:12",
+      "en": "Psalm 90:12"
+    }
   }
 ]

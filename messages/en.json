@@ -50,6 +50,18 @@
       }
     }
   },
+  "about": {
+    "title": "About",
+    "daily_bible_story": {
+      "description": "Daily Bible Story is a unique feature that presents a new Bible story each day, helping you connect with God's word in a meaningful way. Our stories are carefully selected and presented in an engaging format, making it easy to understand and reflect on the teachings of the Bible."
+    },
+    "book_of_answers": {
+      "description": "The Book of Answers is a spiritual guidance tool that helps you find clarity and direction through biblical wisdom. Each answer is carefully crafted to provide meaningful insights while maintaining the integrity of biblical teachings."
+    },
+    "bible_verse_picker": {
+      "description": "The Bible Verse Picker is an interactive tool that helps you discover meaningful Bible verses. Whether you're seeking guidance, inspiration, or comfort, this tool randomly selects verses that can speak to your heart and situation."
+    }
+  },
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Find answers to common questions about our Biblical Wisdom Guide platform",
@@ -82,6 +94,30 @@
       "a1": "Yes, our platform supports multiple languages to make biblical wisdom accessible to a global audience. We offer translations of both the interface and the biblical content, ensuring that users can engage with the material in their preferred language. Our translations are carefully reviewed to maintain the accuracy and nuance of the original biblical texts.",
       "q2": "How can I report technical issues?",
       "a2": "If you encounter any technical issues, you can report them through our contact form or email support. We strive to address all technical concerns promptly to ensure a smooth experience for all users. Your feedback helps us improve the platform and better serve our community of users seeking biblical wisdom."
+    },
+    "daily-bible-story": {
+      "question1": "How often are the stories updated?",
+      "answer1": "A new Bible story is presented each day, ensuring fresh content for your daily spiritual journey.",
+      "question2": "Can I access previous stories?",
+      "answer2": "Yes, you can access stories from previous days through our archive feature.",
+      "question3": "Are the stories available in multiple languages?",
+      "answer3": "Yes, our stories are available in both English and Chinese, with more languages coming soon."
+    },
+    "book-of-answers": {
+      "question1": "How does the Book of Answers work?",
+      "answer1": "Simply focus on your question and click to receive a biblically-inspired answer that provides guidance and wisdom.",
+      "question2": "Are the answers truly random?",
+      "answer2": "While the selection process is random, all answers are carefully crafted to provide meaningful biblical guidance.",
+      "question3": "Can I save my favorite answers?",
+      "answer3": "Yes, you can save and share your favorite answers for future reference."
+    },
+    "bible-verse-picker": {
+      "question1": "How does the verse selection work?",
+      "answer1": "The tool randomly selects verses from our curated collection of meaningful Bible passages.",
+      "question2": "Can I share the selected verses?",
+      "answer2": "Yes, you can easily share verses through various platforms or save them as images.",
+      "question3": "Are the verses available in different languages?",
+      "answer3": "Yes, all verses are available in both English and Chinese translations."
     }
   },
   "privacy": {

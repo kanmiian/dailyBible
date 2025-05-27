@@ -4,22 +4,29 @@ import { useLanguage } from "@/context/language-context"
 import Link from "next/link"
 import { useRandomStory } from "@/hooks/useRandomStory"
 import { ArrowLeft } from "lucide-react"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import { Card } from "@/components/ui/card"
 
 export default function DailyBibleStoryContent({ lang }: { lang: string }) {
   const { t, language } = useLanguage()
   const { story, getRandomStory } = useRandomStory()
+  const [mounted, setMounted] = useState(false)
 
-  // Load a random story when the component mounts
   useEffect(() => {
     getRandomStory()
+    setMounted(true)
   }, [getRandomStory])
 
+  if (!mounted) {
+    return null
+  }
+
   return (
-    <main className="min-h-screen py-16 px-4">
-      <div className="max-w-3xl mx-auto">
+    <div className="container mx-auto px-4 py-8">
+
+      <Card className="p-6 bg-amber-50 dark:bg-amber-900 border-amber-200 dark:border-amber-800">
         <h1 className="text-3xl md:text-4xl font-serif text-amber-950 dark:text-amber-100 mb-8 text-center">
-          {t("story.title")}
+        {t("nav.daily_bible_story")}
         </h1>
         <p className="text-lg text-amber-800 dark:text-amber-200 mb-8 text-center">
           {t("story.subtitle")}
@@ -45,7 +52,7 @@ export default function DailyBibleStoryContent({ lang }: { lang: string }) {
           )}
         </div>
 
-        <div className="mt-8 flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <Link
             href={`/${language}`}
             className="inline-flex items-center justify-center px-6 py-3 border border-amber-200 dark:border-amber-800 text-base font-medium rounded-md text-amber-900 dark:text-amber-200 bg-ivory dark:bg-dark-brown hover:bg-amber-50 dark:hover:bg-amber-900 transition-colors duration-300 shadow-sm divine-button cross-reveal relative overflow-hidden"
@@ -60,7 +67,27 @@ export default function DailyBibleStoryContent({ lang }: { lang: string }) {
             {t("story.read_another")}
           </button>
         </div>
-      </div>
-    </main>
+      </Card>
+
+      <section className="mt-12 p-6 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
+        <div className="prose prose-amber dark:prose-invert max-w-none">
+          <h2 className="text-2xl font-serif text-amber-900 dark:text-amber-100 mb-4">
+            {language === "en" ? "Discover the Power of Bible Stories" : "探索圣经故事的力量"}
+          </h2>
+          <p className="text-lg text-amber-800 dark:text-amber-200 mb-4">
+            {language === "en" 
+              ? "Welcome to our Daily Bible Stories platform, where the timeless wisdom of the Bible comes alive through engaging narratives. Each Bible story is carefully selected to provide spiritual nourishment and practical lessons for modern life. Our collection of Bible stories spans from Genesis to Revelation, offering a comprehensive journey through the Bible's most inspiring tales. Whether you're new to Bible stories or a long-time student of the Bible, our daily Bible stories will help you connect with God's word in a meaningful way."
+              : "欢迎来到我们的每日圣经故事平台，在这里，圣经的永恒智慧通过引人入胜的叙述变得生动。每个圣经故事都经过精心挑选，为现代生活提供灵性滋养和实践教训。我们的圣经故事集从创世记到启示录，为您提供一次穿越圣经最鼓舞人心的故事的全面旅程。无论您是圣经故事的新手还是长期学习者，我们的每日圣经故事都将帮助您以有意义的方式与神的话语建立联系。"
+            }
+          </p>
+          <p className="text-lg text-amber-800 dark:text-amber-200">
+            {language === "en"
+              ? "Our Bible stories are more than just historical accounts - they are living narratives that continue to inspire and guide. From the creation story in Genesis to the parables of Jesus in the Gospels, each Bible story offers unique insights and practical wisdom for daily living. Join us on this journey through the Bible's most powerful stories, and discover how these ancient tales can transform your life today."
+              : "我们的圣经故事不仅仅是历史记载，而是继续激励和指导的活生生的叙述。从创世记中的创世故事到福音书中耶稣的比喻，每个圣经故事都为日常生活提供独特的见解和实用智慧。加入我们，一起探索圣经中最有力的故事，发现这些古老的故事如何能在今天改变您的生活。"
+            }
+          </p>
+        </div>
+      </section>
+    </div>
   )
 } 

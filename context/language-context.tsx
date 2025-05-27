@@ -15,8 +15,9 @@ const translations = {
   zh: {
     // Navigation
     "nav.home": "首页",
-    "nav.daily_story": "每日圣经故事",
-    "nav.book_of_answers": "圣经答案之书",
+    "nav.daily_bible_story": "每日圣经故事",
+    "nav.book-of-answers": "圣经答案之书",
+    "nav.bible-verse-picker": "圣经经文抽选",
     "nav.faq": "常见问题",
 
     // Home
@@ -87,6 +88,7 @@ const translations = {
     "about.values.integrity": "持守圣经诚信",
     "about.values.service": "效法圣经服侍",
     "about.values.excellence": "追求圣经卓越",
+    "about.daily_bible_story.description": "每日圣经故事是一个独特的功能，每天为您呈现一个新的圣经故事，帮助您以有意义的方式与神的话语建立联系。我们的故事经过精心挑选，以引人入胜的方式呈现，让您更容易理解和反思圣经的教导。",
 
     // Privacy Policy
     "privacy.title": "圣经平台隐私政策",
@@ -119,9 +121,24 @@ const translations = {
     "terms.contact.content": "若有圣经相关问题，欢迎联系我们",
 
     // Verse
-    "verse.paste": "复制圣经经文",
-    "verse.copy": "复制",
-    "verse.refresh": "刷新",
+    "verse.start": "开始选择",
+    "verse.stop": "停止",
+    "verse.copy": "复制经文",
+    "verse.share": "分享经文",
+    "verse.share_image": "分享为图片",
+    "verse.generating": "正在生成图片...",
+    "verse.preview_title": "经文图片预览",
+    "verse.copy_image": "复制图片",
+    "verse.close": "关闭",
+    "verse.start_message": "点击【开始】开始选择",
+    "verse.good_luck": "祝你好运！",
+    "verse.holy_spirit": "圣灵启示",
+    "verse.copy_success": "经文已复制到剪贴板",
+    "verse.copy_error": "复制经文失败",
+    "verse.share_error": "分享经文失败",
+    "verse.image_error": "生成图片失败",
+    "verse.image_copy_success": "图片已复制到剪贴板",
+    "verse.image_copy_error": "复制图片失败",
     "story.title": "每日圣经金句",
     "story.subtitle": "探索圣经中的永恒智慧",
     "story.back_home": "返回圣经首页",
@@ -161,12 +178,23 @@ const translations = {
     "faq.contact.phone": "电话",
     "faq.contact.address": "地址",
     "faq.contact.hours": "工作时间",
+    "verse.page_title": "圣经经文选择 - 寻找每日灵感",
+    "verse.page_description": "通过我们的互动选择工具发现有意义的圣经经文。获取每日灵感，与他人分享经文，并创建精美的经文图片。",
+    "verse.introduction": "欢迎使用我们的圣经经文选择工具。在这里，您可以发现触动心灵的经文并与他人分享。",
+    "verse.how_to_use": "点击【开始】按钮开始选择过程。当您觉得合适时，点击【停止】获取您的经文。然后您可以复制、分享或创建所选经文的精美图片。",
+    "faq.daily-bible-story.question1": "故事多久更新一次？",
+    "faq.daily-bible-story.answer1": "每天都会呈现一个新的圣经故事，确保您的每日灵修之旅都有新鲜的内容。",
+    "faq.daily-bible-story.question2": "我可以查看以前的故事吗？",
+    "faq.daily-bible-story.answer2": "是的，您可以通过我们的存档功能访问以前的故事。",
+    "faq.daily-bible-story.question3": "故事支持多种语言吗？",
+    "faq.daily-bible-story.answer3": "是的，我们的故事提供英文和中文版本，更多语言即将推出。",
   },
   en: {
     // Navigation
     "nav.home": "Home",
-    "nav.daily_story": "Daily Bible Story",
-    "nav.book_of_answers": "Book of Answers",
+    "nav.daily_bible_story": "Daily Bible Story",
+    "nav.book-of-answers": "Book of Answers",
+    "nav.bible-verse-picker": "Bible Verse Selection",
     "nav.faq": "FAQ",
 
     // Home
@@ -237,6 +265,7 @@ const translations = {
     "about.values.integrity": "Upholding Bible Integrity",
     "about.values.service": "Bible Servanthood",
     "about.values.excellence": "Pursuing Bible Excellence",
+    "about.daily_bible_story.description": "Daily Bible Story is a unique feature that presents a new Bible story each day, helping you connect with God's word in a meaningful way. Our stories are carefully selected and presented in an engaging format, making it easy to understand and reflect on the teachings of the Bible.",
 
     // Privacy Policy
     "privacy.title": "Bible Privacy Policy",
@@ -269,9 +298,24 @@ const translations = {
     "terms.contact.content": "For Bible-related questions, feel free to reach out.",
 
     // Verse
-    "verse.paste": "Copy Bible Verse",
-    "verse.copy": "Copy",
-    "verse.refresh": "Refresh",
+    "verse.start": "Start Selection",
+    "verse.stop": "Stop",
+    "verse.copy": "Copy Verse",
+    "verse.share": "Share Verse",
+    "verse.share_image": "Share as Image",
+    "verse.generating": "Generating Image...",
+    "verse.preview_title": "Verse Image Preview",
+    "verse.copy_image": "Copy Image",
+    "verse.close": "Close",
+    "verse.start_message": "Click 'Start' to begin",
+    "verse.good_luck": "Good Luck!",
+    "verse.holy_spirit": "The Holy Spirit Speaks",
+    "verse.copy_success": "Verse copied to clipboard",
+    "verse.copy_error": "Failed to copy verse",
+    "verse.share_error": "Failed to share verse",
+    "verse.image_error": "Failed to generate image",
+    "verse.image_copy_success": "Image copied to clipboard",
+    "verse.image_copy_error": "Failed to copy image",
     "story.title": "Daily Bible Verse",
     "story.subtitle": "Explore Bible Wisdom",
     "story.back_home": "Back to Bible Home",
@@ -311,6 +355,16 @@ const translations = {
     "faq.contact.phone": "Phone",
     "faq.contact.address": "Address",
     "faq.contact.hours": "Business Hours",
+    "verse.page_title": "Bible Verse Selection - Find Your Daily Inspiration",
+    "verse.page_description": "Discover meaningful Bible verses through our interactive selection tool. Get daily inspiration, share verses with others, and create beautiful verse images.",
+    "verse.introduction": "Welcome to our Bible Verse Selection tool. Here you can discover meaningful verses that speak to your heart and share them with others.",
+    "verse.how_to_use": "Click the 'Start' button to begin the selection process. When you feel ready, click 'Stop' to receive your verse. You can then copy, share, or create a beautiful image of your selected verse.",
+    "faq.daily-bible-story.question1": "How often are the stories updated?",
+    "faq.daily-bible-story.answer1": "A new Bible story is presented each day, ensuring fresh content for your daily spiritual journey.",
+    "faq.daily-bible-story.question2": "Can I access previous stories?",
+    "faq.daily-bible-story.answer2": "Yes, you can access stories from previous days through our archive feature.",
+    "faq.daily-bible-story.question3": "Are the stories available in multiple languages?",
+    "faq.daily-bible-story.answer3": "Yes, our stories are available in both English and Chinese, with more languages coming soon.",
   },
 }
 

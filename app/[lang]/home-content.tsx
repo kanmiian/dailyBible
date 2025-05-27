@@ -200,6 +200,12 @@ export default function HomeContent({ lang }: { lang: string }) {
           </div>
         </div>
       </section>
+
+      {/* 平台介绍和说明 Section */}
+      <section className="mt-16 bg-amber-50 dark:bg-amber-900/20 rounded-lg p-8 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4 text-amber-900 dark:text-amber-100 text-center">{t("about.title")}</h2>
+        <p className="text-lg text-amber-800 dark:text-amber-200 mb-2 text-center">{t("about.content")}</p>
+      </section>
     </main>
   )
 } 

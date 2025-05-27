@@ -181,6 +181,41 @@ export async function generateSEO({ lang, path }: SEOParams): Promise<Metadata> 
         },
       }
 
+    case '/bible-verse-picker':
+        return {
+          ...baseMetadata,
+          title: isEnglish
+            ? "Random Bible Verse - Get Inspired by Scripture"
+            : "随机圣经金句 - 从经文中获得灵感",
+          description: isEnglish
+            ? "Draw a random Bible verse to uplift your spirit and reflect on God's word. Perfect for daily meditation and sharing with friends."
+            : "随机抽取一段圣经经文，激励你的灵魂，沉思上帝的话语。适合每日默想和与朋友分享。",
+          alternates: {
+            canonical: `${BASE_URL}/${lang}/bible-verse-picker`,
+            languages: {
+              'en': `${BASE_URL}/en/bible-verse-picker`,
+              'zh': `${BASE_URL}/zh/bible-verse-picker`,
+            },
+          },
+          openGraph: {
+            ...baseMetadata.openGraph,
+            title: isEnglish
+              ? "Random Bible Verse - Get Inspired by Scripture"
+              : "随机圣经金句 - 从经文中获得灵感",
+            description: isEnglish
+              ? "Draw a random Bible verse to uplift your spirit and reflect on God's word. Perfect for daily meditation and sharing with friends."
+              : "随机抽取一段圣经经文，激励你的灵魂，沉思上帝的话语。适合每日默想和与朋友分享。",
+            images: [
+              {
+                url: `${BASE_URL}/images/random-bible-verse-og.jpg`,
+                width: 1200,
+                height: 630,
+                alt: isEnglish ? "Random Bible Verse Preview" : "随机圣经金句预览",
+              },
+            ],
+          },
+      }
+
     case '/privacy':
       return {
         ...baseMetadata,
@@ -241,4 +276,72 @@ export async function generateSEO({ lang, path }: SEOParams): Promise<Metadata> 
         },
       }
   }
+}
+
+export function getSEOMetadata(): Metadata {
+  return {
+    title: {
+      default: 'BibleForU - Your Daily Biblical Wisdom Guide',
+      template: '%s | BibleForU'
+    },
+    description: 'Your daily source of biblical wisdom and guidance. Access daily Bible stories, answers to life questions, and spiritual guidance in English and Chinese.',
+    applicationName: 'BibleForU',
+    authors: [{ name: 'BibleForU Team' }],
+    generator: 'Next.js',
+    keywords: ['Bible', 'Christian', 'Spiritual Guidance', 'Daily Devotion', 'Bible Study'],
+    referrer: 'origin-when-cross-origin',
+    themeColor: [
+      { media: '(prefers-color-scheme: light)', color: 'white' },
+      { media: '(prefers-color-scheme: dark)', color: 'black' }
+    ],
+    viewport: {
+      width: 'device-width',
+      initialScale: 1,
+      maximumScale: 1
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    verification: {
+      google: 'your-google-site-verification',
+    },
+    alternates: {
+      canonical: 'https://bibleforu.info',
+      languages: {
+        'en': 'https://bibleforu.info/en',
+        'zh': 'https://bibleforu.info/zh',
+      },
+    },
+    openGraph: {
+      type: 'website',
+      locale: 'en_US',
+      url: 'https://bibleforu.info',
+      siteName: 'BibleForU',
+      title: 'BibleForU - Your Daily Biblical Wisdom Guide',
+      description: 'Your daily source of biblical wisdom and guidance',
+      images: [
+        {
+          url: 'https://bibleforu.info/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'BibleForU',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'BibleForU - Your Daily Biblical Wisdom Guide',
+      description: 'Your daily source of biblical wisdom and guidance',
+      images: ['https://bibleforu.info/twitter-image.jpg'],
+      creator: '@bibleforu',
+    },
+  };
 }
